@@ -1,162 +1,48 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robotica e IA</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #0a0a1a;
-  color: #e0e0e0;
-}
+  <header>
+    <h1>Robotica e Inteligencia Artificial</h1>
+    <p>El origen, las leyes y el futuro de las maquinas inteligentes</p>
+  </header>
 
-header {
-  background: linear-gradient(135deg, #0d0d2b, #1a1a4e);
-  color: #00ffff;
-  padding: 40px 20px;
-  text-align: center;
-  border-bottom: 2px solid #00ffff;
-}
+  <nav>
+    <a href="../index.html">Inicio</a>
+    <a href="../img/galeria.html">Computacion Cuantica</a>
+    <a href="../img/revolucion.html">5a Revolucion Industrial</a>
+  </nav>
 
-header p {
-  color: #aaa;
-  margin-top: 10px;
-  font-size: 14px;
-}
+  <main>
 
-nav {
-  background-color: #111133;
-  padding: 15px;
-  text-align: center;
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
+    <section>
+      <h2>Que es la Inteligencia Artificial?</h2>
+      <p>La IA es la rama de la informatica que busca crear sistemas capaces de realizar tareas que normalmente requieren inteligencia humana: reconocer voz, tomar decisiones, traducir idiomas, jugar ajedrez o diagnosticar enfermedades.</p>
+      <br>
+      <p>Existen dos tipos principales:</p>
+      <br>
+      <p><strong>IA Debil o Estrecha:</strong> Disenada para una tarea especifica. Ejemplos: Siri, Alexa, ChatGPT, sistemas de recomendacion de Netflix.</p>
+      <br>
+      <p><strong>IA General:</strong> Aun en desarrollo. Seria capaz de razonar, aprender y adaptarse como un humano en cualquier situacion.</p>
+    </section>
 
-nav a {
-  color: #00ffff;
-  margin: 5px 10px;
-  text-decoration: none;
-  font-size: 15px;
-  padding: 6px 12px;
-  border: 1px solid #00ffff33;
-  border-radius: 20px;
-  transition: all 0.3s;
-}
+    <section>
+      <h2>Historia de la Robotica</h2>
+      <p>La robotica moderna nacio en la decada de 1950 con el primer brazo robotico industrial llamado <strong>Unimate</strong>, instalado en una fabrica de General Motors en 1961.</p>
+      <br>
+      <p>Hoy existen robots capaces de realizar cirugias, explorar Marte, desactivar bombas, atender tiendas y hasta bailar. Boston Dynamics desarrollo robots humanoides que corren, saltan y hacen acrobacias.</p>
+    </section>
 
-nav a:hover {
-  background-color: #00ffff22;
-  color: #ffffff;
-}
-
-main {
-  padding: 30px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
-section {
-  background-color: #111133;
-  border-left: 4px solid #00ffff;
-  padding: 20px;
-  margin-bottom: 30px;
-  border-radius: 8px;
-}
-
-h2 {
-  color: #00ffff;
-  margin-bottom: 12px;
-  font-size: 1.2rem;
-}
-
-p {
-  line-height: 1.7;
-  font-size: 15px;
-}
-
-/* IMÁGENES */
-.img-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-  margin-top: 15px;
-}
-
-.img-grid img {
-  width: 100%;
-  border-radius: 8px;
-  border: 1px solid #00ffff44;
-  transition: transform 0.3s;
-}
-
-.img-grid img:hover {
-  transform: scale(1.05);
-}
-
-.img-caption {
-  text-align: center;
-  font-size: 12px;
-  color: #888;
-  margin-top: 5px;
-}
-
-/* TARJETAS DE REVOLUCIÓN */
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 15px;
-  margin-top: 15px;
-}
-
-.card {
-  background-color: #0d0d2b;
-  border: 1px solid #00ffff44;
-  border-radius: 10px;
-  padding: 15px;
-  text-align: center;
-}
-
-.card h3 {
-  color: #00ffff;
-  margin-bottom: 8px;
-  font-size: 14px;
-}
-
-.card p {
-  font-size: 13px;
-  color: #aaa;
-}
-
-footer {
-  background-color: #0d0d2b;
-  color: #555;
-  text-align: center;
-  padding: 20px;
-  border-top: 1px solid #333;
-  font-size: 13px;
-}
-
-/* RESPONSIVE */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 1.4rem;
-  }
-
-  nav a {
-    font-size: 13px;
-    padding: 5px 10px;
-  }
-
-  main {
-    padding: 15px;
-  }
-
-  section {
-    padding: 15px;
-  }
-
-  h2 {
-    font-size: 1rem;
-  }
-}
+    <section>
+      <h2>Las 3 Leyes de la Robotica</h2>
+      <p>Formuladas por el escritor <strong>Isaac Asimov</strong> en 1942:</p>
+      <br>
+      <p><strong>1a Ley:</strong> Un robot no puede hacer dano a un ser humano, ni por inaccion permitir que un ser humano sufra dano.</p>
+      <br>
+      <p><strong>2a Ley:</strong> Un robot debe obedecer las ordenes dadas por un ser humano, excepto cuando estas
